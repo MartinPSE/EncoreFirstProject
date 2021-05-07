@@ -28,14 +28,7 @@
 		$('#cartIn').click(function(){
 			
 			
-			var key = '${side.menuId}';
-			// alert(key);
-			var url = '${side.pictureUrl}';
-			var name = '${side.menuName}';
-			var size = '';
-			var eachprice ='';
-			var price = '${side.menuPrice}';
-			var amount = $("#qty").val();
+			
 			var id = '${rvo.custId}';
 			
 			if (id.length =="0"){
@@ -43,6 +36,14 @@
 				location.href="Main/login.jsp";
 				return false
 			}else {
+				var key = '${side.menuId}';
+				var url = '${side.pictureUrl}';
+				var name = '${side.menuName}';
+				var size = '';
+				var eachprice ='';
+				var price = '${side.menuPrice}';
+				var amount = $("#qty").val();
+				
 				if(localStorage.getItem(key)!=null){
 					var data = localStorage.getItem(key).split(",");
 					alert("이미 저장된 품목입니다.")			

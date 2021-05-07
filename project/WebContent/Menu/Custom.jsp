@@ -133,8 +133,8 @@ $(function(){
 			<!-- 결제 -->
 			<div class="c" style="padding-top: 50px;">
 				<div class="cost_box" style="width: 550px; height: 74px; inline-height: 74px; background-color: #f9f9f9;">
-					<span class="costall">총 금액</span><span id="cost">20000원 입니다.</span>
-					<a href="bascket.do" class="button"><span>담기</span></a>
+					<span class="costall">총 금액</span><span id="cost" >20000원 입니다.</span>
+					<a href="bascket.do" class="button" id="cartIn"><span>담기</span></a>
 				</div>
 			</div>
 		</div>
