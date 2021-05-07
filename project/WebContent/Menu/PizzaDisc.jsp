@@ -44,15 +44,15 @@
 				location.href="Main/login.jsp";
 				return false
 			}else {
-				
+			
 				var key = '${pizzaL.menuId}';
+				// alert(key);
 				var url = '${pizzaL.pictureUrl}';
 				var name = '${pizzaL.menuName}';
 				var size = calc();
-				var eachprice = "";
-				var price = '${pizzaL.menuPrice}';
+				var eachprice = '${pizzaL.menuPrice}';			
 				var amount = $("#qty").val();
-				
+				var price = eachprice * amount;
 				if(localStorage.getItem(key)!=null){
 					var data = localStorage.getItem(key).split(",");
 					alert("이미 저장된 품목입니다.")			

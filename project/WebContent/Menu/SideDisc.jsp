@@ -37,12 +37,13 @@
 				return false
 			}else {
 				var key = '${side.menuId}';
+				// alert(key);
 				var url = '${side.pictureUrl}';
 				var name = '${side.menuName}';
 				var size = '';
-				var eachprice ='';
-				var price = '${side.menuPrice}';
+				var eachprice ='${side.menuPrice}';
 				var amount = $("#qty").val();
+				var price = eachprice * amount;
 				
 				if(localStorage.getItem(key)!=null){
 					var data = localStorage.getItem(key).split(",");
